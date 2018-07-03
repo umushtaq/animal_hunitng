@@ -1,0 +1,429 @@
+Converting script [1 / 32]	[\AdvancedSniperStarterKit\SniperGame\Component\FreeCamera.cs]
+	Fragments : 3
+		[ 0] : Line:   14	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 1] : Line:   17	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:   17	InputMethod   GetAxis             	("Horizontal")
+
+Converting script [2 / 32]	[\AdvancedSniperStarterKit\SniperGame\Component\TouchScreenVal.cs]
+	Fragments : 25
+		[ 0] : Line:   85	InputProperty touchCount          
+		[ 1] : Line:   86	InputMethod   GetTouch            	(i)
+		[ 2] : Line:   86	InputMethod   GetTouch            	(i)
+		[ 3] : Line:   97	InputProperty touchCount          
+		[ 4] : Line:   98	InputMethod   GetTouch            	(i)
+		[ 5] : Line:   99	InputMethod   GetTouch            	(i)
+		[ 6] : Line:   99	InputMethod   GetTouch            	(i)
+		[ 7] : Line:  114	InputProperty touchCount          
+		[ 8] : Line:  115	InputMethod   GetTouch            	(i)
+		[ 9] : Line:  116	InputMethod   GetTouch            	(i)
+		[10] : Line:  116	InputMethod   GetTouch            	(i)
+		[11] : Line:  134	InputProperty touchCount          
+		[12] : Line:  135	InputMethod   GetTouch            	(i)
+		[13] : Line:  137	InputMethod   GetTouch            	(i)
+		[14] : Line:  138	InputMethod   GetTouch            	(i)
+		[15] : Line:  138	InputMethod   GetTouch            	(i)
+		[16] : Line:  143	InputMethod   GetTouch            	(i)
+		[17] : Line:  143	InputMethod   GetTouch            	(i)
+		[18] : Line:  163	InputProperty touchCount          
+		[19] : Line:  164	InputMethod   GetTouch            	(i)
+		[20] : Line:  166	InputMethod   GetTouch            	(i)
+		[21] : Line:  167	InputMethod   GetTouch            	(i)
+		[22] : Line:  167	InputMethod   GetTouch            	(i)
+		[23] : Line:  172	InputMethod   GetTouch            	(i)
+		[24] : Line:  172	InputMethod   GetTouch            	(i)
+
+Converting script [3 / 32]	[\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputController.cs]
+	Fragments : 17
+		[ 0] : Line:   28	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:   28	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:   29	InputMethod   GetAxis             	("Horizontal")
+		[ 3] : Line:   29	InputMethod   GetAxis             	("Vertical")
+		[ 4] : Line:   30	InputMethod   GetButton           	("Jump")
+		[ 5] : Line:   32	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 6] : Line:   38	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 7] : Line:   41	InputMethod   GetButton           	("Fire1")
+		[ 8] : Line:   44	InputMethod   GetButtonDown       	("Fire2")
+		[ 9] : Line:   47	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[10] : Line:   50	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[11] : Line:   53	InputMethod   GetKeyDown          	(KeyCode.R)
+		[12] : Line:   56	InputMethod   GetKeyDown          	(KeyCode.Q)
+		[13] : Line:   59	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[14] : Line:   62	InputMethod   GetKeyDown          	(KeyCode.X)
+		[15] : Line:   65	InputMethod   GetKeyDown          	(KeyCode.C)
+		[16] : Line:   68	InputMethod   GetKeyDown          	(KeyCode.V)
+
+Converting script [4 / 32]	[\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputControllerMobile.cs]
+	Fragments : 1
+		[ 0] : Line:   36	InputMethod   GetButton           	("Jump")
+
+Converting script [5 / 32]	[\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\HowTo.cs]
+	Fragments : 2
+		[ 0] : Line:   19	InputMethod   GetKeyDown          	(KeyCode.F)
+		[ 1] : Line:   31	InputMethod   GetKeyDown          	(KeyCode.Escape)
+
+Converting script [6 / 32]	[\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\MouseLock.cs]
+	Fragments : 5
+		[ 0] : Line:   17	Other mod.	[Screen.lockCursor]
+		[ 1] : Line:   19	Other mod.	[Cursor.visible]
+		[ 2] : Line:   20	Other mod.	[Cursor.visible]
+		[ 3] : Line:   21	Other mod.	[Cursor.lockState]
+		[ 4] : Line:   23	Other mod.	[Cursor.lockState]
+
+Converting script [7 / 32]	[\AdvancedSniperStarterKit\SniperGame\Scripts\SimpleController.cs]
+	Fragments : 4
+		[ 0] : Line:   13	InputMethod   GetKey              	(KeyCode.UpArrow)
+		[ 1] : Line:   16	InputMethod   GetKey              	(KeyCode.DownArrow)
+		[ 2] : Line:   19	InputMethod   GetKey              	(KeyCode.LeftArrow)
+		[ 3] : Line:   22	InputMethod   GetKey              	(KeyCode.RightArrow)
+
+Converting script [8 / 32]	[\Control-Freak-2\Debug\Scripts\AxisDebugger.cs]
+	Fragments : 5
+		[ 0] : Line:   32	InputMethod   GetKeyDown          	(this.deltaResetKey)
+		[ 1] : Line:   42	InputProperty mouseScrollDelta    
+		[ 2] : Line:   43	InputProperty mouseScrollDelta    
+		[ 3] : Line:   90	InputMethod   GetAxis             	(axis.name)
+		[ 4] : Line:  133	InputMethod   GetAxis             	(name)
+
+Converting script [9 / 32]	[\Control-Freak-2\Debug\Scripts\GamepadHardwareTester.cs]
+	Fragments : 11
+		[ 0] : Line:   74	InputMethod   GetAxis             	("JoyAxis" + axis)
+		[ 1] : Line:   87	InputMethod   GetKey              	(KeyCode.Joystick1Button0 + key)
+		[ 2] : Line:  114	InputMethod   GetAxisRaw          	(GetJoyAxisName(joy, i)
+		[ 3] : Line:  125	InputMethod   GetKey              	(GetJoyKeyCode(joy, i)
+		[ 4] : Line:  146	InputMethod   GetKey              	(KeyCode.Escape)
+		[ 5] : Line:  147	InputMethod   GetKey              	(KeyCode.Return)
+		[ 6] : Line:  148	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 7] : Line:  149	InputMethod   GetKey              	(KeyCode.RightShift)
+		[ 8] : Line:  150	InputMethod   GetKey              	(KeyCode.LeftControl)
+		[ 9] : Line:  151	InputMethod   GetKey              	(KeyCode.RightControl)
+		[10] : Line:  152	InputMethod   GetKey              	(KeyCode.Space)
+
+Converting script [10 / 32]	[\Control-Freak-2\Scripts\Gamepads\GamepadManager.cs]
+	Fragments : 2
+		[ 0] : Line: 1571	InputMethod   GetKey              	(this.key)
+		[ 1] : Line: 1652	InputMethod   GetAxisRaw          	(this.axisName)
+
+Converting script [11 / 32]	[\Control-Freak-2\Scripts\InputModules\GamepadInputModule.cs]
+	Fragments : 10
+		[ 0] : Line:   37	InputMethod   GetKeyDown          	(KeyCode.Return)
+		[ 1] : Line:   50	InputMethod   GetKeyDown          	(KeyCode.Escape)
+		[ 2] : Line:   64	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[ 3] : Line:   65	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+		[ 4] : Line:   66	InputMethod   GetKeyDown          	(KeyCode.UpArrow)
+		[ 5] : Line:   67	InputMethod   GetKeyDown          	(KeyCode.DownArrow)
+		[ 6] : Line:  226	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+		[ 7] : Line:  226	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[ 8] : Line:  227	InputMethod   GetKeyDown          	(KeyCode.UpArrow)
+		[ 9] : Line:  227	InputMethod   GetKeyDown          	(KeyCode.DownArrow)
+
+Converting script [12 / 32]	[\Control-Freak-2\Scripts\System\CF2Input.cs]
+	Fragments : 33
+		[ 0] : Line:  158	InputProperty simulateMouseWithTouches
+		[ 1] : Line:  165	InputProperty simulateMouseWithTouches
+		[ 2] : Line:  169	InputProperty simulateMouseWithTouches
+		[ 3] : Line:  205	InputMethod   GetAxis             	(axisName)
+		[ 4] : Line:  215	InputMethod   GetAxis             	(axisName)
+		[ 5] : Line:  224	InputMethod   GetAxisRaw          	(axisName)
+		[ 6] : Line:  233	InputMethod   GetAxisRaw          	(axisName)
+		[ 7] : Line:  250	InputMethod   GetButton           	(axisName)
+		[ 8] : Line:  259	InputMethod   GetButton           	(axisName)
+		[ 9] : Line:  269	InputMethod   GetButtonDown       	(axisName)
+		[10] : Line:  278	InputMethod   GetButtonDown       	(axisName)
+		[11] : Line:  287	InputMethod   GetButtonUp         	(axisName)
+		[12] : Line:  295	InputMethod   GetButtonUp         	(axisName)
+		[13] : Line:  312	InputMethod   GetKey              	(keyCode)
+		[14] : Line:  321	InputMethod   GetKeyDown          	(keyCode)
+		[15] : Line:  330	InputMethod   GetKeyUp            	(keyCode)
+		[16] : Line:  341	InputMethod   GetKey              	(keyName)
+		[17] : Line:  351	InputMethod   GetKeyDown          	(keyName)
+		[18] : Line:  361	InputMethod   GetKeyUp            	(keyName)
+		[19] : Line:  366	InputProperty anyKey              
+		[20] : Line:  370	InputProperty anyKeyDown          
+		[21] : Line:  388	InputProperty touchCount          
+		[22] : Line:  399	InputProperty touches             
+		[23] : Line:  409	InputMethod   GetTouch            	(i)
+		[24] : Line:  427	InputMethod   GetMouseButton      	(mouseButton)
+		[25] : Line:  436	InputMethod   GetMouseButtonDown  	(mouseButton)
+		[26] : Line:  445	InputMethod   GetMouseButtonUp    	(mouseButton)
+		[27] : Line:  464	InputProperty mousePosition       
+		[28] : Line:  476	InputProperty mouseScrollDelta    
+		[29] : Line:  476	InputProperty mouseScrollDelta    
+		[30] : Line:  484	InputProperty simulateMouseWithTouches
+		[31] : Line:  490	InputProperty simulateMouseWithTouches
+		[32] : Line:  492	InputProperty simulateMouseWithTouches
+
+Converting script [13 / 32]	[\Control-Freak-2\Scripts\System\CFCursor.cs]
+	Fragments : 8
+		[ 0] : Line:  171	Other mod.	[UnityEngine.Screen.lockCursor]
+		[ 1] : Line:  173	Other mod.	[UnityEngine.Cursor.lockState]
+		[ 2] : Line:  181	Other mod.	[UnityEngine.Screen.lockCursor]
+		[ 3] : Line:  183	Other mod.	[UnityEngine.Cursor.lockState]
+		[ 4] : Line:  193	Other mod.	[UnityEngine.Screen.showCursor]
+		[ 5] : Line:  195	Other mod.	[UnityEngine.Cursor.visible]
+		[ 6] : Line:  203	Other mod.	[UnityEngine.Screen.showCursor]
+		[ 7] : Line:  205	Other mod.	[UnityEngine.Cursor.visible]
+
+Converting script [14 / 32]	[\Control-Freak-2\Scripts\System\CFScreen.cs]
+	Fragments : 7
+		[ 0] : Line:   86	Other mod.	[Screen.fullScreen]
+		[ 1] : Line:   87	Other mod.	[Screen.fullScreen]
+		[ 2] : Line:   98	Other mod.	[Screen.SetResolution(width, height, fullScreen, refreshRate)]
+		[ 3] : Line:  124	Other mod.	[Screen.dpi]
+		[ 4] : Line:  137	Other mod.	[Screen.dpi]
+		[ 5] : Line:  140	Other mod.	[Screen.dpi]
+		[ 6] : Line:  145	Other mod.	[Screen.dpi]
+
+Converting script [15 / 32]	[\Control-Freak-2\Scripts\System\InputRig.cs]
+	Fragments : 11
+		[ 0] : Line:  827	InputMethod   GetKey              	(key)
+		[ 1] : Line: 1222	InputMethod   GetKey              	(keyCode)
+		[ 2] : Line: 1241	InputMethod   GetKeyDown          	(keyCode)
+		[ 3] : Line: 1260	InputMethod   GetKeyUp            	(keyCode)
+		[ 4] : Line: 1273	InputProperty anyKey              
+		[ 5] : Line: 1274	InputProperty anyKeyDown          
+		[ 6] : Line: 1700	Other mod.	[Touch]
+		[ 7] : Line: 1723	Other mod.	[Touch]
+		[ 8] : Line: 1736	Other mod.	[UnityEngine.Touch]
+		[ 9] : Line: 1862	Other mod.	[Touch]
+		[10] : Line: 1929	Other mod.	[Touch]
+
+Converting script [16 / 32]	[\Control-Freak-2\Scripts\TouchControls\SuperTouchZone.cs]
+	Fragments : 24
+		[ 0] : Line: 2098	InputMethod   GetKey              	(this.zone.emuMouseTwoFingersKey)
+		[ 1] : Line: 2098	InputMethod   GetKey              	(this.zone.emuMouseTwistKey)
+		[ 2] : Line: 2098	InputMethod   GetKey              	(this.zone.emuMousePinchKey)
+		[ 3] : Line: 2099	InputMethod   GetKey              	(this.zone.emuMouseThreeFingersKey)
+		[ 4] : Line: 2174	InputMethod   GetKey              	(this.zone.emuMouseTwistKey)
+		[ 5] : Line: 2175	InputMethod   GetKey              	(this.zone.emuMousePinchKey)
+		[ 6] : Line: 2180	InputMethod   GetKey              	(this.zone.emuMouseTwoFingersKey)
+		[ 7] : Line: 2180	InputMethod   GetKey              	(this.zone.emuMouseThreeFingersKey)
+		[ 8] : Line: 2197	InputMethod   GetKey              	(this.zone.emuKeySwipeR)
+		[ 9] : Line: 2197	InputMethod   GetKey              	(this.zone.emuKeySwipeL)
+		[10] : Line: 2198	InputMethod   GetKey              	(this.zone.emuKeySwipeU)
+		[11] : Line: 2198	InputMethod   GetKey              	(this.zone.emuKeySwipeD)
+		[12] : Line: 2200	InputMethod   GetKey              	(this.zone.emuKeyPinch)
+		[13] : Line: 2200	InputMethod   GetKey              	(this.zone.emuKeySpread)
+		[14] : Line: 2201	InputMethod   GetKey              	(this.zone.emuKeyTwistL)
+		[15] : Line: 2201	InputMethod   GetKey              	(this.zone.emuKeyTwistR)
+		[16] : Line: 2210	InputMethod   GetKey              	(this.zone.emuKeyOneFinger)
+		[17] : Line: 2212	InputMethod   GetKey              	(this.zone.emuKeyTwoFingers)
+		[18] : Line: 2214	InputMethod   GetKey              	(this.zone.emuKeyThreeFingers)
+		[19] : Line: 2224	InputMethod   GetKey              	(this.zone.emuKeyOneFinger)
+		[20] : Line: 2225	InputMethod   GetKey              	(this.zone.emuKeyTwoFingers)
+		[21] : Line: 2226	InputMethod   GetKey              	(this.zone.emuKeyThreeFingers)
+		[22] : Line: 2300	InputMethod   GetKey              	(this.zone.emuMouseTwistKey)
+		[23] : Line: 2301	InputMethod   GetKey              	(this.zone.emuMousePinchKey)
+
+Converting script [17 / 32]	[\Control-Freak-2\Scripts\TouchControls\TouchControlPanel.cs]
+	Fragments : 12
+		[ 0] : Line:  464	InputProperty touchPressureSupported
+		[ 1] : Line:  466	InputProperty touchCount          
+		[ 2] : Line:  468	Other mod.	[UnityEngine.Touch]
+		[ 3] : Line:  468	InputMethod   GetTouch            	(i)
+		[ 4] : Line:  488	InputProperty touchPressureSupported
+		[ 5] : Line:  490	InputProperty touchCount          
+		[ 6] : Line:  492	Other mod.	[UnityEngine.Touch]
+		[ 7] : Line:  492	InputMethod   GetTouch            	(i)
+		[ 8] : Line:  633	InputMethod   GetMouseButton      	(0)
+		[ 9] : Line:  634	InputMethod   GetMouseButton      	(1)
+		[10] : Line:  635	InputMethod   GetMouseButton      	(2)
+		[11] : Line:  636	InputProperty touchCount          
+
+Converting script [18 / 32]	[\Emerald AI\Scripts\Character Controller\EmeraldCharacterController.cs]
+	Fragments : 12
+		[ 0] : Line:   79	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 1] : Line:   81	InputMethod   GetAxis             	("Horizontal")
+		[ 2] : Line:   81	InputMethod   GetAxis             	("Vertical")
+		[ 3] : Line:   93	InputMethod   GetKey              	(KeyCode.W)
+		[ 4] : Line:  108	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 5] : Line:  110	InputMethod   GetAxis             	("Horizontal")
+		[ 6] : Line:  110	InputMethod   GetAxis             	("Vertical")
+		[ 7] : Line:  124	InputMethod   GetKey              	(KeyCode.W)
+		[ 8] : Line:  124	InputMethod   GetKey              	(KeyCode.A)
+		[ 9] : Line:  124	InputMethod   GetKey              	(KeyCode.S)
+		[10] : Line:  124	InputMethod   GetKey              	(KeyCode.D)
+		[11] : Line:  138	InputMethod   GetButton           	("Jump")
+
+Converting script [19 / 32]	[\Emerald AI\Scripts\Character Controller\HideMouse.cs]
+	Fragments : 9
+		[ 0] : Line:   11	Other mod.	[Cursor.lockState]
+		[ 1] : Line:   12	Other mod.	[Cursor.lockState]
+		[ 2] : Line:   13	Other mod.	[Cursor.visible]
+		[ 3] : Line:   18	InputMethod   GetKeyDown          	(KeyCode.Escape)
+		[ 4] : Line:   25	Other mod.	[Cursor.lockState]
+		[ 5] : Line:   26	Other mod.	[Cursor.lockState]
+		[ 6] : Line:   27	Other mod.	[Cursor.visible]
+		[ 7] : Line:   32	Other mod.	[Cursor.lockState]
+		[ 8] : Line:   33	Other mod.	[Cursor.visible]
+
+Converting script [20 / 32]	[\Emerald AI\Scripts\Character Controller\SwordAnimation.cs]
+	Fragments : 7
+		[ 0] : Line:   23	InputMethod   GetMouseButton      	(0)
+		[ 1] : Line:   28	InputMethod   GetKey              	(KeyCode.W)
+		[ 2] : Line:   28	InputMethod   GetKey              	(KeyCode.A)
+		[ 3] : Line:   28	InputMethod   GetKey              	(KeyCode.S)
+		[ 4] : Line:   28	InputMethod   GetKey              	(KeyCode.D)
+		[ 5] : Line:   30	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 6] : Line:   36	InputMethod   GetKey              	(KeyCode.LeftShift)
+
+Converting script [21 / 32]	[\Emerald AI\Scripts\Helper Systems\RayCastBreed.cs]
+	Fragments : 2
+		[ 0] : Line:   21	InputMethod   GetKeyDown          	(KeyCode.E)
+		[ 1] : Line:   26	InputMethod   GetMouseButtonDown  	(0)
+
+Converting script [22 / 32]	[\Emerald AI\Scripts\Player\PlayerWeapon.cs]
+	Fragments : 2
+		[ 0] : Line:   68	InputMethod   GetMouseButton      	(0)
+		[ 1] : Line:   85	InputMethod   GetMouseButton      	(0)
+
+Converting script [23 / 32]	[\Emerald AI\Scripts\Player\PlayerWeapon3rdPerson.cs]
+	Fragments : 2
+		[ 0] : Line:   64	InputMethod   GetMouseButton      	(0)
+		[ 1] : Line:   78	InputMethod   GetMouseButton      	(0)
+
+Converting script [24 / 32]	[\Military1\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs]
+	Fragments : 4
+		[ 0] : Line:   37	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:   39	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:   46	InputMethod   GetAxis             	("Mouse X")
+		[ 3] : Line:   50	InputMethod   GetAxis             	("Mouse Y")
+
+Converting script [25 / 32]	[\RFPSP\Scripts\Camera\CameraControl.cs]
+	Fragments : 1
+		[ 0] : Line:  306	InputMethod   GetAxis             	("Mouse Scroll Wheel")
+
+Converting script [26 / 32]	[\RFPSP\Scripts\Camera\MovePlayerAndCamera.cs]
+	Fragments : 3
+		[ 0] : Line:   58	InputMethod   GetKeyDown          	(KeyCode.Insert)
+		[ 1] : Line:   61	InputMethod   GetKeyDown          	(KeyCode.Delete)
+		[ 2] : Line:   64	InputMethod   GetKeyDown          	(KeyCode.End)
+
+Converting script [27 / 32]	[\RFPSP\Scripts\Camera\SmoothMouseLook.cs]
+	Fragments : 7
+		[ 0] : Line:   72	Other mod.	[Cursor.visible]
+		[ 1] : Line:   78	Other mod.	[Cursor.lockState]
+		[ 2] : Line:   79	Other mod.	[Cursor.visible]
+		[ 3] : Line:   89	Other mod.	[Cursor.lockState]
+		[ 4] : Line:   90	Other mod.	[Cursor.visible]
+		[ 5] : Line:  138	Other mod.	[Cursor.lockState]
+		[ 6] : Line:  139	Other mod.	[Cursor.visible]
+
+Converting script [28 / 32]	[\RFPSP\Scripts\Player\InputControl.cs]
+	Fragments : 58
+		[ 0] : Line:  167	InputMethod   GetButton           	("Left")
+		[ 1] : Line:  168	InputMethod   GetButton           	("Right")
+		[ 2] : Line:  169	InputMethod   GetButton           	("Forward")
+		[ 3] : Line:  170	InputMethod   GetButton           	("Back")
+		[ 4] : Line:  190	InputMethod   GetAxis             	("Joystick Move X")
+		[ 5] : Line:  190	InputMethod   GetAxis             	("Joystick Move Y")
+		[ 6] : Line:  197	InputMethod   GetAxis             	("Joystick Look X")
+		[ 7] : Line:  197	InputMethod   GetAxis             	("Joystick Look Y")
+		[ 8] : Line:  209	InputMethod   GetAxisRaw          	("Mouse X")
+		[ 9] : Line:  210	InputMethod   GetAxisRaw          	("Mouse Y")
+		[10] : Line:  213	InputMethod   GetAxisRaw          	("Xbox R Trigger")
+		[11] : Line:  213	InputMethod   GetButton           	("Fire")
+		[12] : Line:  219	InputMethod   GetAxisRaw          	("Xbox L Trigger")
+		[13] : Line:  219	InputMethod   GetButton           	("Zoom")
+		[14] : Line:  226	InputMethod   GetAxis             	("Xbox Dpad X")
+		[15] : Line:  236	InputMethod   GetAxis             	("Xbox Dpad X")
+		[16] : Line:  255	InputMethod   GetAxis             	("Xbox Dpad Y")
+		[17] : Line:  265	InputMethod   GetAxis             	("Xbox Dpad Y")
+		[18] : Line:  285	InputMethod   GetAxis             	("Mouse Scroll Wheel")
+		[19] : Line:  287	InputMethod   GetButtonDown       	("Fire")
+		[20] : Line:  288	InputMethod   GetButtonDown       	("Zoom")
+		[21] : Line:  289	InputMethod   GetButtonDown       	("Reload")
+		[22] : Line:  290	InputMethod   GetButtonDown       	("Fire Mode")
+		[23] : Line:  291	InputMethod   GetButton           	("Jump")
+		[24] : Line:  292	InputMethod   GetButtonDown       	("Jump")
+		[25] : Line:  293	InputMethod   GetButton           	("Crouch")
+		[26] : Line:  294	InputMethod   GetButton           	("Prone")
+		[27] : Line:  295	InputMethod   GetButton           	("Sprint")
+		[28] : Line:  296	InputMethod   GetButton           	("Lean Left")
+		[29] : Line:  297	InputMethod   GetButton           	("Lean Right")
+		[30] : Line:  298	InputMethod   GetButton           	("Use")
+		[31] : Line:  299	InputMethod   GetButtonDown       	("Use")
+		[32] : Line:  300	InputMethod   GetButtonUp         	("Use")
+		[33] : Line:  301	InputMethod   GetButton           	("Toggle Camera")
+		[34] : Line:  302	InputMethod   GetButtonDown       	("Toggle Camera")
+		[35] : Line:  303	InputMethod   GetButton           	("Throw Grenade")
+		[36] : Line:  304	InputMethod   GetButtonDown       	("Melee Attack")
+		[37] : Line:  305	InputMethod   GetButtonDown       	("Toggle Flashlight")
+		[38] : Line:  306	InputMethod   GetButtonDown       	("Holster Weapon")
+		[39] : Line:  307	InputMethod   GetButtonDown       	("Drop Weapon")
+		[40] : Line:  308	InputMethod   GetButtonDown       	("Bullet Time")
+		[41] : Line:  309	InputMethod   GetButtonDown       	("Toggle Deadzone Aiming")
+		[42] : Line:  310	InputMethod   GetButtonDown       	("Help")
+		[43] : Line:  311	InputMethod   GetButtonDown       	("Main Menu")
+		[44] : Line:  312	InputMethod   GetButtonDown       	("Pause")
+		[45] : Line:  313	InputMethod   GetButtonDown       	("Select Next Weapon")
+		[46] : Line:  314	InputMethod   GetButtonDown       	("Select Previous Weapon")
+		[47] : Line:  315	InputMethod   GetButtonDown       	("Select Next Grenade")
+		[48] : Line:  316	InputMethod   GetButtonDown       	("Select Weapon 1")
+		[49] : Line:  317	InputMethod   GetButtonDown       	("Select Weapon 2")
+		[50] : Line:  318	InputMethod   GetButtonDown       	("Select Weapon 3")
+		[51] : Line:  319	InputMethod   GetButtonDown       	("Select Weapon 4")
+		[52] : Line:  320	InputMethod   GetButtonDown       	("Select Weapon 5")
+		[53] : Line:  321	InputMethod   GetButtonDown       	("Select Weapon 6")
+		[54] : Line:  322	InputMethod   GetButtonDown       	("Select Weapon 7")
+		[55] : Line:  323	InputMethod   GetButtonDown       	("Select Weapon 8")
+		[56] : Line:  324	InputMethod   GetButtonDown       	("Select Weapon 9")
+		[57] : Line:  325	InputMethod   GetButtonDown       	("Select Weapon 0")
+
+Converting script [29 / 32]	[\RFPSP\Scripts\Weapons\WeaponPivot.cs]
+	Fragments : 4
+		[ 0] : Line:  109	Other mod.	[Cursor.lockState]
+		[ 1] : Line:  110	Other mod.	[Cursor.visible]
+		[ 2] : Line:  256	Other mod.	[Cursor.lockState]
+		[ 3] : Line:  257	Other mod.	[Cursor.visible]
+
+Converting script [30 / 32]	[\Script\ExitScreen.cs]
+	Fragments : 1
+		[ 0] : Line:   23	InputMethod   GetKeyDown          	(KeyCode.Escape)
+
+Converting script [31 / 32]	[\Script\GameManager.cs]
+	Fragments : 1
+		[ 0] : Line:  112	InputMethod   GetKeyDown          	(KeyCode.Escape)
+
+Converting script [32 / 32]	[\Military1\Tools\ScreenshotTakerPro.js]
+	Fragments : 3
+		[ 0] : Line:    2	InputMethod   GetKeyDown          	(KeyCode.P)
+		[ 1] : Line:    2	InputMethod   GetKeyDown          	(KeyCode.O)
+		[ 2] : Line:    3	InputMethod   GetKeyDown          	(KeyCode.O)
+
+
+32 scripts modified!
+Overwriting actual scripts...
+	[0 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\Component\FreeCamera.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\Component\FreeCamera.cs]
+	[1 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\Component\TouchScreenVal.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\Component\TouchScreenVal.cs]
+	[2 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputController.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputController.cs]
+	[3 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputControllerMobile.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\FPSInputControllerMobile.cs]
+	[4 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\HowTo.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\HowTo.cs]
+	[5 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\MouseLock.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\FPSplayer\Scripts\MouseLock.cs]
+	[6 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\AdvancedSniperStarterKit\SniperGame\Scripts\SimpleController.cs] to [E:/MIlitary Project/Assets/\AdvancedSniperStarterKit\SniperGame\Scripts\SimpleController.cs]
+	[7 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Debug\Scripts\AxisDebugger.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Debug\Scripts\AxisDebugger.cs]
+	[8 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Debug\Scripts\GamepadHardwareTester.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Debug\Scripts\GamepadHardwareTester.cs]
+	[9 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\Gamepads\GamepadManager.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\Gamepads\GamepadManager.cs]
+	[10 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\InputModules\GamepadInputModule.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\InputModules\GamepadInputModule.cs]
+	[11 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\System\CF2Input.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\System\CF2Input.cs]
+	[12 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\System\CFCursor.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\System\CFCursor.cs]
+	[13 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\System\CFScreen.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\System\CFScreen.cs]
+	[14 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\System\InputRig.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\System\InputRig.cs]
+	[15 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\TouchControls\SuperTouchZone.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\TouchControls\SuperTouchZone.cs]
+	[16 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Control-Freak-2\Scripts\TouchControls\TouchControlPanel.cs] to [E:/MIlitary Project/Assets/\Control-Freak-2\Scripts\TouchControls\TouchControlPanel.cs]
+	[17 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Character Controller\EmeraldCharacterController.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Character Controller\EmeraldCharacterController.cs]
+	[18 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Character Controller\HideMouse.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Character Controller\HideMouse.cs]
+	[19 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Character Controller\SwordAnimation.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Character Controller\SwordAnimation.cs]
+	[20 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Helper Systems\RayCastBreed.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Helper Systems\RayCastBreed.cs]
+	[21 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Player\PlayerWeapon.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Player\PlayerWeapon.cs]
+	[22 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Emerald AI\Scripts\Player\PlayerWeapon3rdPerson.cs] to [E:/MIlitary Project/Assets/\Emerald AI\Scripts\Player\PlayerWeapon3rdPerson.cs]
+	[23 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Military1\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs] to [E:/MIlitary Project/Assets/\Military1\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs]
+	[24 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\RFPSP\Scripts\Camera\CameraControl.cs] to [E:/MIlitary Project/Assets/\RFPSP\Scripts\Camera\CameraControl.cs]
+	[25 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\RFPSP\Scripts\Camera\MovePlayerAndCamera.cs] to [E:/MIlitary Project/Assets/\RFPSP\Scripts\Camera\MovePlayerAndCamera.cs]
+	[26 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\RFPSP\Scripts\Camera\SmoothMouseLook.cs] to [E:/MIlitary Project/Assets/\RFPSP\Scripts\Camera\SmoothMouseLook.cs]
+	[27 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\RFPSP\Scripts\Player\InputControl.cs] to [E:/MIlitary Project/Assets/\RFPSP\Scripts\Player\InputControl.cs]
+	[28 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\RFPSP\Scripts\Weapons\WeaponPivot.cs] to [E:/MIlitary Project/Assets/\RFPSP\Scripts\Weapons\WeaponPivot.cs]
+	[29 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Script\ExitScreen.cs] to [E:/MIlitary Project/Assets/\Script\ExitScreen.cs]
+	[30 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Script\GameManager.cs] to [E:/MIlitary Project/Assets/\Script\GameManager.cs]
+	[31 / 32] from  [E:/MIlitary Project/CF2-Data/Script-Backups/2018-04-18-14-25\Assets-After/\Military1\Tools\ScreenshotTakerPro.js] to [E:/MIlitary Project/Assets/\Military1\Tools\ScreenshotTakerPro.js]
+
+Overwriting COMPLETED!
