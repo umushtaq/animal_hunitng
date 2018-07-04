@@ -1206,8 +1206,8 @@ MonoBehaviour:
   offSetDistance: 0
   currentlyBeingPursued: 0
   attackDamage: 5
-  attackDamageMin: 10
-  attackDamageMax: 15
+  attackDamageMin: 5
+  attackDamageMax: 10
   attackSounds: []
   injuredSounds: []
   impactSounds: []
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   useRagdoll: 0
   isPlayer: 0
   attackDelaySeconds: 0.5
-  TabNumber: 9
+  TabNumber: 2
   TabNumberAll: 0
   returnsToStart: 0
   useBreedEffect: 0

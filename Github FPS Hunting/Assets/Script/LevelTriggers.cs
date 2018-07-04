@@ -22,7 +22,7 @@ public class LevelTriggers : MonoBehaviour {
 		TotalTarget ();
 		totaltarget = 3;
 		Debug.Log ("TOtalTarget "+ totaltarget);
-		totaltext.text = "/ "  + totaltarget.ToString ();
+		totaltext.text = ""  + totaltarget.ToString ();
 	}
 
 

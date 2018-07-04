@@ -4163,6 +4163,7 @@ public class Emerald_Animal_AI : MonoBehaviour
 				LevelTriggers.Instance.Damage ();
 				Debug.LogError ("FLesh Is Dead");
 				instantiateLion.instance.FleshDie ();
+			//	FPSPlayer.instance.hitPoints= -5;
 			}
 					sound = false;
 		}

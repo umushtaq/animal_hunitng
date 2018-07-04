@@ -472,7 +472,7 @@ public class FPSPlayer : MonoBehaviour {
 		Time.timeScale = pauseTime;	
 	}
 	void Update (){
-	
+		
 		//detect if menu display button was pressed
 		if (InputComponent.menuPress){
 			if(!menuDisplayed){
@@ -1331,7 +1331,7 @@ public class FPSPlayer : MonoBehaviour {
 	public void PlayAgain(){
 		paused = false;
 		Time.timeScale = pauseTime;
-		SceneManager.LoadScene ("MilitaryScene");
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 	//	AudioListener.volume = 1;
 	}
 	public void RestartMap () {
