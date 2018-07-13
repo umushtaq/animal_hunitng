@@ -7,20 +7,15 @@ public class UIManager : MonoBehaviour {
 	public AudioClip ClickSound;
 	public static UIManager instance;
 	public GameObject mainMenu;
-	//public GameObject vehicleSelection;
-	//public GameObject vehicleSel;
 	public GameObject levelSelection;
+	public GameObject exitGameDialague;
 	public GameObject Playerpreferences;
-//	public VehicleSelection vehicle;
-//	public Text txtTotalcash;
 
 	private int next;
-//	public string rateusLink;
-//	public string moregamesLink;
 
-	// Use this for initialization
 	void Start () {
 		
+	 //	PlayerPrefs.DeleteAll ();
 		next = PlayerPrefs.GetInt ("Next", 0);
 
 		if (next == 1) {
@@ -32,21 +27,21 @@ public class UIManager : MonoBehaviour {
 			PlayerPrefs.SetInt ("Next", 0);
 			MainMenu ();
 		}
-
-
-
-	//	txtTotalcash.text =""+ PlayerPrefs.GetInt ("TotalCash",0);
+			
 	}
-		
+
+	void Update()
+	{
+		if (Input.GetKeyDown (KeyCode.Escape)) 
+		{
+			exitGameDialague.SetActive (true);
+		}
+	}
 	public void MainMenu()
 	{
-//		Admob_Ads_Script.Instance.showNativeAds();
-	//	Admob_Ads_Script.Instance.showNativeAds2();
-	//	Admob_Ads_Script.Instance.showNativeAds3();
 		mainMenu.SetActive (true);
-	//	vehicleSel.SetActive (false);
-	//	vehicleSelection.SetActive (false);
 		levelSelection.SetActive (false);
+		exitGameDialague.SetActive (false);
 
 	}
 	public void BackToMain()
@@ -56,11 +51,18 @@ public class UIManager : MonoBehaviour {
 		levelSelection.SetActive (false);
 
 	}
-
+	public void ExitYes()
+	{
+		Application.Quit ();
+	}
+	public void ExitNo()
+	{
+		exitGameDialague.SetActive (false);
+	}
 	public void ExitGame()
 	{
 		GetComponent<AudioSource> ().PlayOneShot(ClickSound);
-		Application.Quit ();
+
 	}
 
 	public void VehicleSelection()

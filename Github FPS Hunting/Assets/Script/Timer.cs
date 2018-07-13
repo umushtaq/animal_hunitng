@@ -8,51 +8,33 @@ public class Timer : MonoBehaviour {
 	public float myTime;
 	public Text timertxt;
 	int addd;
-	public static GameObject plyr;
+	public static GameObject timer;
 	// Use this for initialization
 	void Start () {
-		
+		timer = GameObject.FindGameObjectWithTag("timer");
 		addd = 0;
 		myTime = GameManager.Instance.timervalue;
 		print ("my time "+ myTime);
-		plyr = GameObject.FindGameObjectWithTag("Player");
-		
+
 	}
-	
-	// Update is called once per frame
 	void Update () {
 		
 		TimerFunction ();
 	}
-
-
-
+		
 	void TimerFunction()
 	{
 		int minutes = (int)myTime / 60;
 		int second = (int)myTime % 60;
 		timertxt.text = minutes.ToString()+" : " + second.ToString();
 		myTime = myTime - Time.deltaTime;
-
-
 		if (myTime <= 0) {
 			GameManager.Instance.gameOverDialogue.SetActive (true);
-			pause.tym.GetComponent<Timer>().enabled = false;
-	//		plyr.gameObject.transform.Find(gameObject.name="All Audio Sources").gameObject.SetActive(false);
-
 			timertxt.text = "00"+" : " + "00";
+			Time.timeScale = 0;
 			if (addd == 0) {
-//				if (Admob.Instance().isInterstitialReady()) {
-//					Admob.Instance().showInterstitial();
-//				}
-//				else if (Advertisement.IsReady ()) {
-//					Advertisement.Show ();
-//				}else if(StartAppWrapperiOS.isAdReady()){
-//					StartAppWrapperiOS.showAd ();
-//				}
+				//Add Ads hERE
 				addd = 1;
-				//AdsController.instance.ShowUnityAd ();
-				//AdsController.instance.showAdmobInter ();
 			}
 
 		} else 
@@ -75,8 +57,7 @@ public class Timer : MonoBehaviour {
 					timertxt.text = "" + minutes.ToString () + " : " + second.ToString ();
 				}
 			}
-
-
+				
 		}
 
 	}

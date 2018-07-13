@@ -154,7 +154,6 @@ public class InputControl : MonoBehaviour {
 	private bool xbdpRstate;
 	private bool xbdpUstate;
 	private bool xbdpDstate;
-
 	void Start () {
 		FPSPlayerComponent = GetComponent<FPSPlayer>();
 	//	selectWeap3Press = true;
@@ -326,6 +325,10 @@ public class InputControl : MonoBehaviour {
 			selectWeap9Press = ControlFreak2.CF2Input.GetButtonDown("Select Weapon 9");
 			selectWeap0Press = ControlFreak2.CF2Input.GetButtonDown("Select Weapon 0");
 
+			if (ControlFreak2.CF2Input.GetButtonDown ("Select Weapon 1") || ControlFreak2.CF2Input.GetButtonDown ("Select Weapon 2") ) 
+			{
+				animationcontrol.instance.WeaponContainerOnOff ();
+			}
 		}else{
 			fireHold = false;//stop shooting if level is restarting
 		}

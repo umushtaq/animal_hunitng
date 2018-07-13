@@ -1,59 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-//using admob;
-//using UnityEngine.Advertisements;
 using UnityEngine.SceneManagement;
-
-//using UnityEngine.Advertisements;
 
 public class LevelSelection : MonoBehaviour {
 
 	public AudioClip ClickSound;
 	public Button[] levels;
-//	public GameObject left,right;
-//	public GameObject progressbar;
 	private int unlockLevels;
 	public GameObject loding;
 	public GameObject Playerpreferences;
 
 
-	// Use this for initialization
 	void Start () {
-
 		loding.SetActive (false);
-//		DontDestroyOnLoad(LoadingObj);
-//		onClick=false;
-
 		UnlockLevels ();
-		//Advertisement.Initialize (PlayerPrefs.GetString("UnityID",""), false);
 	}
 
-//	int i=0;
-	// Update is called once per frame
 	void Update () {
-
-
-
-//		if (onClick || LoadingObj.activeSelf) {
 			Time.timeScale = 1;
-//			loadingBar.TriggerOnComplete=true;
-//			loadingBar.IncrementValue (i);
-//			i++;
-//		}
 	}
-
 
 	void loading(){
 		loding.SetActive (true);
 	}
 
-
 	void NextLevel(){
-	//	Admob.Instance().removeNativeBanner("Native2");
-	//	Admob.Instance().removeNativeBanner("Native3");
-		SceneManager.LoadScene ("MilitaryScene");
-		//Application.LoadLevel("GamePlay");
+		SceneManager.LoadScene ("GamePlay");
 	}
 	public void SetUnlockLevel()
 	{
@@ -129,7 +102,6 @@ public class LevelSelection : MonoBehaviour {
 			PlayerPrefs.SetInt ("Level", 10);
 			break;
 		case 11:
-
 			PlayerPrefs.SetInt ("Level", 11);
 			break;
 
@@ -137,8 +109,6 @@ public class LevelSelection : MonoBehaviour {
 
 		Invoke("loading",.1f);
 	//	Invoke("NextLevel",2.5f);
-
-	
 
 	}
 

@@ -33,7 +33,7 @@ public class HealthText : MonoBehaviour {
 		if(healthGui != oldHealthGui || oldWidth != Screen.width){
 			if(healthGui < 0.0f && !showNegativeHP){
 				guiTextComponent.text = "Health : 0";
-				Debug.Log ("Dead");
+		//		Debug.Log ("Dead");
 			}else{
 				guiTextComponent.text = "Health : "+ healthGui.ToString();
 			}

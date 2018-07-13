@@ -392,6 +392,7 @@ public class Emerald_Animal_AI : MonoBehaviour
 	// Changes
 	private int levelValue;
 	private bool sound;
+	private FPSPlayer FPSComponent;
 
 	void Awake()
 	{
@@ -4152,24 +4153,37 @@ public class Emerald_Animal_AI : MonoBehaviour
 	//Disable unneeded components and change our tag so the AI is no longer a target
 	void Dead ()
 	{
+		int hurt = 25;
+		int damage = 50;
 
 		if (EmeraldObjectsTag == "Friend") 
 		{
+			FPSPlayer.instance.ApplyDamage (hurt);
 			Debug.Log ("Friend is Dead");
 		}
+		if (EmeraldObjectsTag == "Rabbit") 
+		{
+			FPSPlayer.instance.ApplyDamage (damage);
+			Debug.Log ("Rabbit is Dead");
+		}
+		if (EmeraldObjectsTag == "Boar") 
+		{
+			FPSPlayer.instance.ApplyDamage (hurt);
+			Debug.Log ("Boar is Dead");
+		}
+
 		if (EmeraldObjectsTag == "Flesh") 
 		{
 			if (sound) {
 				LevelTriggers.Instance.Damage ();
-				Debug.LogError ("FLesh Is Dead");
-				instantiateLion.instance.FleshDie ();
-			//	FPSPlayer.instance.hitPoints= -5;
+					instantiateLion.instance.FleshAwake ();
+				Debug.Log ("FLesh Is Dead");
 			}
-					sound = false;
+			sound = false;
 		}
 
 
-		Destroy (this.gameObject,5f);
+		Destroy (this.gameObject,10f);
 		navMeshAgent.enabled = false;
 		this.gameObject.tag = "Untagged";
 		triggerCollider.gameObject.tag = "Untagged";
