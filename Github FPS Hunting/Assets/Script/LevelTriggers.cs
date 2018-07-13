@@ -7,9 +7,7 @@ public class LevelTriggers : MonoBehaviour {
 
 	public static LevelTriggers Instance;
 	private int levelvalue;
-	public static GameObject plyr;
 	public static int totaltarget;
-	private int value;
 	public Text totaltext;
 
 	void Awake()
@@ -20,21 +18,28 @@ public class LevelTriggers : MonoBehaviour {
 	{
 		levelvalue = PlayerPrefs.GetInt ("Level");
 		TotalTarget ();
-		totaltarget = 3;
-		Debug.Log ("TOtalTarget "+ totaltarget);
 		totaltext.text = ""  + totaltarget.ToString ();
-	}
 
+	}
 
 	public void Damage()
 	{
-		Debug.Log ("Entering Value ");
 		totaltarget--;
-		totaltext.text = "/ "  + totaltarget.ToString ();
-		if (totaltarget <= 0) {
-			Debug.LogError ("LevelComplete");
+		totaltext.text = "" + totaltarget.ToString ();
+		if (totaltarget <= 0) 
+		{
+			Invoke ("LevelCompleteDialogue",2f);
+		
 		}
 
+	}
+
+	void LevelCompleteDialogue()
+	{
+		GameManager.Instance.hudsManager.SetActive (false);
+		GameManager.Instance.LevelCompleteDialogue.SetActive (true);
+		UnlockLevel ();
+		Time.timeScale = 0;
 	}
 	void TotalTarget()
 	{
@@ -46,47 +51,38 @@ public class LevelTriggers : MonoBehaviour {
 		if (levelvalue == 1) 
 		{
 			totaltarget = 4;
-
 		}
 		if (levelvalue == 2 ) 
 		{
-			totaltarget = 3;
-		
+			totaltarget = 4;
 		}
 		if (levelvalue == 3 ) 
 		{
-			totaltarget = 4;
-
+			totaltarget = 5;
 		}
 		if (levelvalue == 4) {
 			
 			totaltarget = 5;
-
 		}
 		if (levelvalue == 5 ) 
 		{
-			totaltarget = 1;
-
+			totaltarget = 5;
 		}
 		if (levelvalue == 6 ) 
 		{
-			totaltarget = 2;
-
+			totaltarget = 6;
 		}
 		if (levelvalue == 7 ) 
 		{
-			totaltarget = 3;
-
+			totaltarget = 6;
 		}
 		if (levelvalue == 8 ) 
 		{
 			totaltarget = 4;
-
 		}
 		if (levelvalue == 9 ) 
 		{
 			totaltarget = 5;
-
 		}
 
 	}

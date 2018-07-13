@@ -3,6 +3,7 @@
 //directs player button mappings to other scripts, handles item detection and pickup, and plays basic player sound effects.
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class FPSPlayer : MonoBehaviour {
 
@@ -85,8 +86,6 @@ public class FPSPlayer : MonoBehaviour {
 	private ThirstText ThirstText;
 	private ThirstText[] ThirstText2;
 	private GUIText ThirstGUIText;
-	public GameObject Pausepanel;
-	public GameObject GameOverPanel;
 	[HideInInspector]
 	public float crosshairWidth;
 	private Rect crossRect;
@@ -100,7 +99,8 @@ public class FPSPlayer : MonoBehaviour {
 	private Transform mainCamTransform;
 	[TooltipAttribute("True if the prefab parent object will be removed on scene load.")]
 	public bool removePrefabRoot = true;
-	
+	//player Slider
+	public Slider playerSlider;
 	//player hit points
 	public float hitPoints = 100.0f;
 	public float maximumHitPoints = 200.0f;
@@ -290,6 +290,9 @@ public class FPSPlayer : MonoBehaviour {
 	public bool paused;
 	private MainMenu MainMenuComponent;
 
+	//For slider color change;
+	public Image healthImage;
+
 	void Awake(){
 		if (instance == null) {
 			instance = this;
@@ -298,6 +301,7 @@ public class FPSPlayer : MonoBehaviour {
 
 	void Start (){	
 
+		playerSlider.value= hitPoints;
 		if(removePrefabRoot){
 			GameObject prefabRoot = transform.parent.transform.gameObject;
 			transform.parent.transform.DetachChildren();
@@ -467,7 +471,8 @@ public class FPSPlayer : MonoBehaviour {
 		
 	}
 	public void unPaused(){
-		Pausepanel.SetActive (false);
+		GameManager.Instance.hudsManager.SetActive (true);
+		GameManager.Instance.PauseDialogue.SetActive (false);
 		paused = false;
 		Time.timeScale = pauseTime;	
 	}
@@ -495,8 +500,9 @@ public class FPSPlayer : MonoBehaviour {
 		
 		if(InputComponent.pausePress && !menuDisplayed){
 			if(Time.timeScale > 0.0f){
-				Debug.Log ("pausedtrue");
-				Pausepanel.SetActive (true);
+				GameManager.Instance.hudsManager.SetActive (false);
+//				Debug.Log ("paused");
+				GameManager.Instance.PauseDialogue.SetActive (true);
 				paused = true;
 				pauseTime = Time.timeScale;
 				Time.timeScale = 0.0f;
@@ -1080,16 +1086,20 @@ public class FPSPlayer : MonoBehaviour {
 		//set health hud value to hitpoints remaining
 		HealthText.healthGui = Mathf.Round(hitPoints);
 		HealthText2[1].healthGui = Mathf.Round(hitPoints);
-			
+
 		//change color of hud health element based on hitpoints remaining
 		if (hitPoints <= 25.0f){
+			healthImage.color = Color.red;
 			healthGuiText.material.color = Color.red;
-		}else if (hitPoints <= 40.0f){
+		}else if (hitPoints <= 50.0f){
+			healthImage.color = Color.yellow;
 			healthGuiText.material.color = Color.yellow;	
-		}else{
+		}
+		else{
+			healthImage.color = Color.green;
 			healthGuiText.material.color = HealthText.textColor;	
 		}
-
+	
 	}
 	
 	//update the hunger amount for the player
@@ -1158,7 +1168,7 @@ public class FPSPlayer : MonoBehaviour {
 	
 	//remove hitpoints from player health
 	public void ApplyDamage ( float damage, Transform attacker = null, bool isMeleeAttack = false){
-
+	//	Debug.Log ("Damage");
 		float appliedPainKickAmt;
 			
 		if (hitPoints < 1.0f){//Don't apply damage if player is dead
@@ -1210,8 +1220,10 @@ public class FPSPlayer : MonoBehaviour {
 			
 		//change color of hud health element based on hitpoints remaining
 		if (hitPoints <= 25.0f){
+		//	playerSlider.GetComponentInChildren<Material> ().color = Color.red;
 			healthGuiText.material.color = Color.red;
-		}else if (hitPoints <= 40.0f){
+		}else if (hitPoints <= 50.0f){
+		//	playerSlider.GetComponentInChildren<Material> ().color = Color.yellow;
 			healthGuiText.material.color = Color.yellow;	
 		}else{
 			healthGuiText.material.color = HealthText.textColor;	
@@ -1289,9 +1301,20 @@ public class FPSPlayer : MonoBehaviour {
 		}
 	
 		//Call Die function if player's hitpoints have been depleted
+		if (hitPoints <= 25.0f) {
+			healthImage.color = Color.red;
+		} else if (hitPoints <= 50.0f) {
+			healthImage.color = Color.yellow;
+		} else {
+			healthImage.color = Color.green;
+		}
 		if (hitPoints < 1.0f){
 			SendMessage("Die");//use SendMessage() to allow other script components on this object to detect player death
 		}
+		playerSlider.value = hitPoints;
+//		Debug.Log ("Hitpoints "+hitPoints);
+//		Debug.Log ("Sliderpoints "+playerSlider.value);
+
 	}
 	
 	void Die () {
@@ -1317,17 +1340,13 @@ public class FPSPlayer : MonoBehaviour {
 		//call FadeAndLoadLevel function with fadein argument set to false 
 		//in levelLoadFadeObj to restart level and fade screen out from black on level load
 		llf.GetComponent<LevelLoadFade>().FadeAndLoadLevel(Color.black, 2.0f, false);
-
-		//LevelTrigger.instance.Currenttarget = 0;
-		CharacterDamage.Soldierdie = 0;
-		GameOverPanel.SetActive (true);
+		GameManager.Instance.hudsManager.SetActive (false);
+		GameManager.Instance.gameOverDialogue.SetActive(true);
 		paused = true;
 		pauseTime = Time.timeScale;
-		GameOverPanel.SetActive (true);
-		CharacterDamage.Soldierdie = 0;
-		Time.timeScale = 0.0f;
-	//	AudioListener.volume = 0;
+		Time.timeScale = 0;
 	}
+
 	public void PlayAgain(){
 		paused = false;
 		Time.timeScale = pauseTime;

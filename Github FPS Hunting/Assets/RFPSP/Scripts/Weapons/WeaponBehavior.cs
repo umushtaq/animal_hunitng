@@ -680,6 +680,7 @@ public class WeaponBehavior : MonoBehaviour {
 
 	void Start (){
 
+		maxAmmo = 100;
 		myTransform = transform;//cache transform for efficiency
 		mainCamTransform = Camera.main.transform;
 		
@@ -832,7 +833,7 @@ public class WeaponBehavior : MonoBehaviour {
 			ammo = Mathf.Clamp(ammo, 0, maxAmmo);
 			//limit bulletsToReload value to bulletsPerClip value
 			bulletsToReload = Mathf.Clamp(bulletsToReload, 0, bulletsPerClip);
-			
+						
 			//make weapon recover faster from sprinting if using the pistol sprint anim 
 			//because the gun/rifle style anims have more yaw movement and take longer to return to center
 			if(!PistolSprintAnim){recoveryTimeAmt = 0.4f;}else{recoveryTimeAmt = 0.2f;}

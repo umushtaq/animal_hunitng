@@ -116,6 +116,9 @@ public class PlayerWeapons : MonoBehaviour {
 		WeaponBehavior BackupWeaponBehaviorComponent = weaponOrder[backupWeapon].GetComponent<WeaponBehavior>();
 		weaponBehaviors = myTransform.GetComponentsInChildren <WeaponBehavior>(true);
 
+		// we are giving all wapons to player at the start
+		GiveAllWeaponsAndAmmo();
+
 		aSources = transform.GetComponents<AudioSource>();
 		aSource = playerObj.AddComponent<AudioSource>(); 
 		aSource.spatialBlend = 0.0f;
@@ -128,7 +131,7 @@ public class PlayerWeapons : MonoBehaviour {
 		for(int i = 0; i < weaponOrder.Length; i++)	{
 			weaponOrder[i].GetComponent<WeaponBehavior>().weaponNumber = i;
 		}
-		
+
 		currentGrenade = 0; 
 		GrenadeWeaponBehaviorComponent = grenadeOrder[currentGrenade].GetComponent<WeaponBehavior>();
 		grenadeWeapon = GrenadeWeaponBehaviorComponent.weaponNumber;
@@ -159,7 +162,7 @@ public class PlayerWeapons : MonoBehaviour {
 				}
 			}
 		}
-		GiveAllWeaponsAndAmmo();
+
 	}
 	
 	void Update (){

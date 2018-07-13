@@ -7,11 +7,6 @@ public class Music_Controller : MonoBehaviour {
 	public Slider volume;
 	public AudioSource music;
 	// Use this for initialization
-	void Start () {
-		
-
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		music.volume=volume.value;

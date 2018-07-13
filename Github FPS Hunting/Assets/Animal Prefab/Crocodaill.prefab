@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 136305193712107178}
   m_Layer: 13
   m_Name: Crocodaill
-  m_TagString: Flesh
+  m_TagString: Croco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,8 +737,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124960850133292}
-  m_LocalRotation: {x: -0, y: 0.99456847, z: -0, w: -0.10408489}
-  m_LocalPosition: {x: 212.97371, y: 0.83549964, z: 354.13168}
+  m_LocalRotation: {x: -0, y: 0.9208192, z: -0, w: 0.38998976}
+  m_LocalPosition: {x: 182.8, y: 0.38, z: 350.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4132962020535160}
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   EmeraldTags:
   - Player
   AITag: 
-  EmeraldObjectsTag: Flesh
+  EmeraldObjectsTag: Croco
   EmeraldLayerMask:
     serializedVersion: 2
     m_Bits: 13
@@ -1238,7 +1238,7 @@ MonoBehaviour:
   grazeAnimationSpeed: 1
   dieAnimationSpeed: 1
   fleeRadius: 15
-  huntRadius: 28
+  huntRadius: 25
   wanderRange: 35
   fleeRange: 25
   turnSpeed: 800
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   useRagdoll: 0
   isPlayer: 0
   attackDelaySeconds: 0.5
-  TabNumber: 6
+  TabNumber: 9
   TabNumberAll: 0
   returnsToStart: 0
   useBreedEffect: 0
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   fleeRandomnessTimer: 0
   fleeRandomness: 0
   stuck: 1
-  NPCName: Deer
+  NPCName: Crocodile
   autoCalculateDelaySeconds: 0
   useHitAnimation: 1
   baseOffsetNav: -0.8
@@ -1621,5 +1621,5 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1.58
   m_BaseOffset: 0
-  m_WalkableMask: 14
+  m_WalkableMask: 10
   m_ObstacleAvoidanceType: 4

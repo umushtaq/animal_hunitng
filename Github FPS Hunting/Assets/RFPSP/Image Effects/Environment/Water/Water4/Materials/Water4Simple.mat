@@ -84,7 +84,7 @@ Material:
     - _ReflectionColor: {r: 0.5514706, g: 0.6580349, b: 0.7352941, a: 0.49803922}
     - _RefractionFog: {r: 0.8681778, g: 0.8797176, b: 0.8880597, a: 1}
     - _SpecularColor: {r: 0.60185987, g: 0.6579465, b: 0.6764706, a: 1}
-    - _WorldLightDir: {r: 0.013992459, g: -0.17359087, b: -0.98471904, a: 0}
+    - _WorldLightDir: {r: -0.98464954, g: -0.17359084, b: -0.018222213, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
